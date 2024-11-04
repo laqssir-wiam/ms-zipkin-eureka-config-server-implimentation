@@ -40,3 +40,4 @@ public class SchoolController {
         return ResponseEntity.ok(service.findSchoolsWithStudents(schoolId));
     }
 }
+
