@@ -6,10 +6,9 @@
 #    fetch-registry: false
 #    service-url:
 #      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
-#
-server:
-  port: 8761
+
 spring:
-  application: discovery
+  application:
+    name: discovery
   config:
-    import: configserver:http://localhost:8888
+    import: "configserver:http://localhost:8888"
